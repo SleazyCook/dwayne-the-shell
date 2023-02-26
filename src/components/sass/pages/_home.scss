@@ -35,11 +35,22 @@
     animation-fill-mode: backwards;
     animation-delay: 1.5s;
 
+    // width: 3.5rem;
+
+
+    // @include respond(tab-land) {
+    //   width: 6rem;
+    // }
+
   }
 
   &__img {
-    animation: fadeIn 2s ease-out;
-    animation-fill-mode: backwards;
-    animation-delay: 1s;
+    width: 300px;;
+    height: 320px;;
+
+    @include respond(tab-land) {
+      width: 420px;
+      height: 450px;
+    }
   }
 }

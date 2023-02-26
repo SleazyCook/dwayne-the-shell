@@ -19,7 +19,7 @@ function Home() {
 
      <div className="home__img-box">
       <Link to="journal">
-        <img src="https://i.imgur.com/go7u9Zn.png" />
+        <img className="home__img" src="https://i.imgur.com/go7u9Zn.png" />
       </Link>
      </div>
 

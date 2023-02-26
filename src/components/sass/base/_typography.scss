@@ -11,20 +11,30 @@
 
   &--main {
     display: block;
-    font-size: 10rem;
+    font-size: 15rem;
     font-weight: 700;
     letter-spacing: 1.05rem;
     animation: fadeIn 3s ease-out;
+
+    @include respond(tab-land) {
+      font-size: 10rem;
+    }
   }
 
   &--sub {
     display: block;
     font-size: 6rem;
     font-weight: 700;
-    letter-spacing: 2.1rem;
+    letter-spacing: 4.5rem;
+
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
     animation-delay: .75s;
+
+    @include respond(tab-land) {
+      font-size: 6rem;
+      letter-spacing: 2.1rem;
+    }
   }
 
 }
