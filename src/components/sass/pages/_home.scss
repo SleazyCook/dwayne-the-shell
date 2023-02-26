@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100svh;
   flex-direction: column;
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
 
   // Background Image
   background-image: linear-gradient(

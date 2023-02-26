@@ -71,7 +71,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100svh;
   flex-direction: column;
   background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 0, 128, 0.6)), url("https://i.imgur.com/Z0qgdiv.png");
   background-size: cover;
@@ -88,6 +88,9 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none; }
+  @media (min-width: 37.5em) {
+    .home {
+      height: 100vh; } }
   .home__img-box {
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
