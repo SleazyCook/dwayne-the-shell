@@ -4,22 +4,21 @@ import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 
 function Home() {
-  const [navClicked, setNavClicked] = useState(false);
-  const [navClass, setNavClass] = useState("u-hidden");
+  // const [navClicked, setNavClicked] = useState(false);
+  // const [navClass, setNavClass] = useState("u-hidden");
 
-  const openNav = () => {
-    if (!navClicked) {
-      setNavClass("")
-    } else {
-      setNavClass("u-hidden")
-    }
-  }
+  // const openNav = () => {
+  //   if (!navClicked) {
+  //     setNavClass("")
+  //   } else {
+  //     setNavClass("u-hidden")
+  //   }
+  // }
 
 
   return (
     <div className="home">
 
-      <Navigation className={navClass}/>
 
 
     <div className="home__text-box">
@@ -33,7 +32,7 @@ function Home() {
 
 
      <div className="home__img-box">
-      <img onClick={openNav} className="home__img" src="https://i.imgur.com/go7u9Zn.png" />
+      <Link to="/navigate" ><img className="home__img" src="https://i.imgur.com/go7u9Zn.png" /></Link>
      </div>
 
 

@@ -5,6 +5,8 @@ import App from './components/App'
 import ErrorPage from './components/ErrorPage'
 import Home from './components/Home'
 
+import Navigation from './components/Navigation'
+
 import Journal from './components/Journal'
 
 const appElement = document.getElementById('app')
@@ -19,6 +21,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: "navigate",
+        element: <Navigation />
       },
       {
         path: "journal",
