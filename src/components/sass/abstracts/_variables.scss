@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 
 $font-size-default: 1.6rem;
 
 $font-medieval: 'MedievalSharp', cursive;
 $font-dwayne: 'Grape Nuts', cursive;
 $font-default: 'Lato', sans-serif;
+$font-nav: 'Rowdies', cursive;
 
 
 // COLORS
@@ -21,7 +23,9 @@ $color-primary--dark: darkblue;
 // $color-tertiary-light: 
 // $color-tertiary-dark: 
 
-$green-soft: #a4c856;
+$color-green-soft: #a4c856;
+$color-purple-soft: #814f7a;
+$color-brown-soft: #60461f;
 
 $color-grey--light-1: #f7f7f7;
 $color-grey--light-2: #eee;

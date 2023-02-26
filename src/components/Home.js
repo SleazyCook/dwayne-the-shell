@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Navigation from './Navigation'
 
 function Home() {
+  const [navClicked, setNavClicked] = useState(false);
+  const [navClass, setNavClass] = useState("navigation u-hidden");
+
+
   return (
     <div className="home">
 
@@ -18,10 +22,12 @@ function Home() {
 
 
      <div className="home__img-box">
-      <Link to="journal">
-        <img className="home__img" src="https://i.imgur.com/go7u9Zn.png" />
-      </Link>
+      <img className="home__img" src="https://i.imgur.com/go7u9Zn.png" />
      </div>
+
+
+    <Navigation />
+
 
 
     </div>

@@ -1,0 +1,105 @@
+// From Home.scss
+// position: relative;
+// transitition all .5s;
+.home{
+  position: relative;
+  transition: all .5s;
+}
+
+.navigation {
+  height: 100svh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  // not working right now
+  transform-origin: center;
+  animation: scaleOut 1s;
+
+  display: none;
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 3px solid white;
+
+    margin-top: 40rem;
+
+    @include respond(tab-land) {
+      margin-top: 10rem;
+    }
+
+    @include respond(desktop) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__link {
+    font-size: 9rem;
+
+    @include respond(tab-land) {
+      font-size: 8rem;
+    }
+
+    display: block;
+    font-family: $font-nav;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    color: $color-brown-soft;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    @include respond (tab-port) {
+
+      &:before,
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .5s;
+      }
+  
+      &:hover:before {
+        color: rgb(119, 239, 255);
+        color: $color-brown-soft;
+        z-index: 1;
+        -webkit-text-stroke: 1px black;
+        transform: translate(10px, -10px)
+      }
+  
+      &:hover:after {
+        color: $color-green-soft;
+        z-index: 2;
+        -webkit-text-stroke: 1px black;
+        transform: translate(20px, -20px)
+      }
+  
+      &:hover {
+        color: $color-purple-soft;
+        -webkit-text-stroke: 1px black;
+        transition: .5s;
+  
+      }
+    }
+
+
+  }
+}

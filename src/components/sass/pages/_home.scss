@@ -4,6 +4,8 @@
   align-items: center;
   height: 100svh;
   flex-direction: column;
+  position: relative;
+  transition: all .5s;
 
   @include respond(tab-port) {
     height: 100vh;
