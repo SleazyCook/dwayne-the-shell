@@ -1,0 +1,30 @@
+.body {
+  font-family: $font-default;
+  font-weight: 400;
+}
+
+.heading-primary {
+  color: $green-soft;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  font-family: $font-medieval;
+
+  &--main {
+    display: block;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 1.05rem;
+    animation: fadeIn 3s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2.1rem;
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: .75s;
+  }
+
+}

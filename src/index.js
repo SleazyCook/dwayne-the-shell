@@ -5,6 +5,8 @@ import App from './components/App'
 import ErrorPage from './components/ErrorPage'
 import Home from './components/Home'
 
+import Journal from './components/Journal'
+
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)
 
@@ -17,6 +19,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: "journal",
+        element: <Journal />
       }
     ]
   }

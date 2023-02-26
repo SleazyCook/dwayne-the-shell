@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  // Background Image
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(lightgreen, 0.5),
+    rgba(purple, 0.6)
+  ),
+  url("https://i.imgur.com/Z0qgdiv.png");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+
+
+  // Remove Highlight Select
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+
+  &__text-box {
+    // margin-bottom: 1rem;
+    // margin-right: 5rem;
+  }
+
+  &__img-box {
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
+
+  }
+
+  &__img {
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+  }
+}

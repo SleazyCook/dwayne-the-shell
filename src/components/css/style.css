@@ -1,3 +1,89 @@
-* {
-  background-color: black;
-  color: white; }
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 30%; }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 62.5%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  box-sizing: border-box; }
+
+.body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.heading-primary {
+  color: #a4c856;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  font-family: "MedievalSharp", cursive; }
+  .heading-primary--main {
+    display: block;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 1.05rem;
+    animation: fadeIn 3s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2.1rem;
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: .75s; }
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 0, 128, 0.6)), url("https://i.imgur.com/Z0qgdiv.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+  .home__img-box {
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s; }
+  .home__img {
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1s; }
