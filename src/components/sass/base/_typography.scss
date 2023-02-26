@@ -11,7 +11,8 @@
 
   &--main {
     display: block;
-    font-size: 13rem;
+    text-align: center;
+    font-size: 12rem;
     font-weight: 700;
     letter-spacing: 1.05rem;
     animation: fadeIn 3s ease-out;
@@ -23,9 +24,10 @@
 
   &--sub {
     display: block;
+    text-align: center;
     font-size: 5rem;
     font-weight: 700;
-    letter-spacing: 4rem;
+    letter-spacing: 3rem;
 
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
