@@ -64,7 +64,9 @@ body {
     font-size: 12rem;
     font-weight: 700;
     letter-spacing: 1.05rem;
-    animation: fadeIn 3s ease-out; }
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: .75s; }
     @media (min-width: 56.25em) {
       .heading-primary--main {
         font-size: 10rem; } }
@@ -76,7 +78,7 @@ body {
     letter-spacing: 2rem;
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
-    animation-delay: .75s; }
+    animation-delay: 1.25s; }
     @media (min-width: 56.25em) {
       .heading-primary--sub {
         font-size: 6rem;
@@ -184,9 +186,7 @@ body {
     .home {
       height: 100vh; } }
   .home__img-box {
-    animation: fadeIn 2s ease-out;
-    animation-fill-mode: backwards;
-    animation-delay: 1.5s; }
+    animation: fadeIn 2s ease-out; }
   .home__img {
     width: 300px;
     height: 320px;

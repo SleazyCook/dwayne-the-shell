@@ -16,6 +16,8 @@
     font-weight: 700;
     letter-spacing: 1.05rem;
     animation: fadeIn 3s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: .75s;
 
     @include respond(tab-land) {
       font-size: 10rem;
@@ -31,7 +33,7 @@
 
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
-    animation-delay: .75s;
+    animation-delay: 1.25s;
 
     @include respond(port) {
       font-size: 5rem;
