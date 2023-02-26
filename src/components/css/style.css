@@ -45,7 +45,9 @@ html {
       font-size: 75%; } }
 
 body {
-  background-color: #1e1e1e;
+  background-image: url("https://i.imgur.com/YOM22Sy.png");
+  background-size: cover;
+  background-position: top;
   color: #fff;
   box-sizing: border-box; }
 
