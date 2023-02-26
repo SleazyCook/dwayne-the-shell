@@ -1,9 +1,10 @@
 // From Home.scss
 // position: relative;
 // transitition all .5s;
-.home{
+#home__nav-box{
   position: relative;
-  transition: all .5s;
+  // animation: scaleOut .5s;
+  // transform-origin: center;
 }
 
 .navigation {
@@ -15,11 +16,18 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  // not working right now
   transform-origin: center;
-  animation: scaleOut 1s;
+  animation: scaleOut .5s;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
+  transition: all .5s;
 
-  display: none;
+  // position: absolute;
+  // top: 0;
+  // left: -50%;
+  // left: -50%;
+
+  // display: none;
 
   @include respond(tab-port) {
     height: 100vh;
@@ -61,6 +69,10 @@
     color: $color-brown-soft;
     -webkit-text-stroke: 1px black;
     position: relative;
+
+    animation: fadeIn .5s;
+    animation-fill-mode: backwards;
+    animation-delay: 5s;
 
     &:not(:last-child) {
       margin-bottom: 3rem;
