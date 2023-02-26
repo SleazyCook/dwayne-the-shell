@@ -111,7 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40rem; }
+    margin-top: 10rem; }
     @media (min-width: 56.25em) {
       .navigation__container {
         margin-top: 10rem; } }
