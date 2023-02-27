@@ -104,12 +104,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   transform-origin: center;
   animation: scaleOut .5s;
-  z-index: 1; }
+  z-index: 1;
+  overflow: scroll;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+  .navigation::-webkit-scrollbar {
+    display: none; }
   @media (min-width: 37.5em) {
     .navigation {
       height: 100vh; } }
@@ -126,6 +135,9 @@ body {
     @media (min-width: 75em) {
       .navigation__container {
         margin-top: 5rem; } }
+    @media (min-width: 112.5em) {
+      .navigation__container {
+        margin-top: 8rem; } }
   .navigation__link {
     font-size: 9rem;
     display: block;
@@ -139,6 +151,9 @@ body {
     -webkit-text-stroke: 1px black;
     position: relative; }
     @media (min-width: 56.25em) {
+      .navigation__link {
+        font-size: 6rem; } }
+    @media (min-width: 112.5em) {
       .navigation__link {
         font-size: 8rem; } }
     .navigation__link:not(:last-child) {
