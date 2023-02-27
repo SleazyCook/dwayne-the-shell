@@ -3,6 +3,7 @@
   font-weight: 400;
 }
 
+// Home Page
 .heading-primary {
   color: $color-green-soft;
   text-transform: uppercase;
@@ -47,4 +48,21 @@
     }
   }
 
+}
+
+// Page Headers
+.heading-secondary {
+  
+  text-align: center;
+  font-size: 12em;
+  font-family: $font-medieval;
+
+  @include respond(tab-land) {
+    font-size: 9rem;
+  }
+
+  & a {
+    color: $color-green-soft;
+    text-decoration: none;
+  }
 }

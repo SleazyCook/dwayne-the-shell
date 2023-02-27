@@ -92,8 +92,46 @@ body {
         font-size: 5rem;
         letter-spacing: 1.25rem; } }
 
+.heading-secondary {
+  text-align: center;
+  font-size: 12em;
+  font-family: "MedievalSharp", cursive; }
+  @media (min-width: 56.25em) {
+    .heading-secondary {
+      font-size: 9rem; } }
+  .heading-secondary a {
+    color: #a4c856;
+    text-decoration: none; }
+
 .u-hidden {
   display: none; }
+
+.journal-card {
+  height: 45rem;
+  min-width: 35rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Lato", sans-serif; }
+  .journal-card__text-box {
+    width: 100%;
+    background-image: linear-gradient(to right top, rgba(96, 70, 31, 0.8), rgba(164, 200, 86, 0.8));
+    padding: 2rem; }
+    .journal-card__text-box--main {
+      display: block;
+      font-size: 3rem; }
+    .journal-card__text-box--sub {
+      display: block;
+      font-size: 1rem; }
+  .journal-card--1 {
+    background-image: url("https://i.imgur.com/GpjcILA.png");
+    background-position: center; }
+  .journal-card--2 {
+    background-image: url("https://i.imgur.com/uwcz8AW.png");
+    background-position: center; }
+  .journal-card--3 {
+    background-image: url("https://i.imgur.com/m4CUuck.png");
+    background-position: center; }
 
 #home__nav-box {
   position: relative; }
@@ -208,3 +246,37 @@ body {
       .home__img {
         width: 400px;
         height: 428.5px; } }
+
+.journal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  flex-direction: column;
+  position: relative;
+  transition: all .5s;
+  background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.25), rgba(128, 0, 128, 0.25)), url("https://i.imgur.com/M6Gv3fe.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+  @media (min-width: 37.5em) {
+    .journal {
+      height: 100vh; } }
+  .journal__main {
+    width: 100%;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden; }

@@ -1,0 +1,55 @@
+.journal-card {
+  height: 45rem;
+  min-width: 35rem;
+  // border: 3px solid blue;
+  // box-shadow: 
+
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+
+  font-family: $font-default;
+
+  &__text-box {
+
+    
+    width: 100%;
+    background-image: linear-gradient(
+      to right top,
+      rgba($color-brown-soft, 0.8),
+      rgba($color-green-soft, 0.8)
+    );
+    padding: 2rem;
+
+
+    &--main {
+      display: block;
+      font-size: 3rem;
+    }
+
+    &--sub {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  &--1{
+    background-image: 
+      url("https://i.imgur.com/GpjcILA.png");
+    background-position: center;
+  }
+
+  &--2{
+    background-image:  
+      url("https://i.imgur.com/uwcz8AW.png");
+    background-position: center;
+  }
+
+  &--3{
+    background-image:  
+      url("https://i.imgur.com/m4CUuck.png");
+    background-position: center;
+  }
+}
