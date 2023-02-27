@@ -5,7 +5,7 @@ function Journal() {
   return (
     <div className="journal">
 
-      <h2 className="heading-secondary"><Link to="/navigate">Journal</Link></h2>
+      <h2 className="heading-secondary"><Link to="/navigate">Journal</Link><span></span></h2>
 
       <div className="journal__main">
 
@@ -35,18 +35,18 @@ function Journal() {
               02/25/2023</span>
           </div>
         </div> {/* 02 End */}
-        <div className="journal-card journal-card--2">
+        <div className="journal-card journal-card--coming-soon">
           <div className="journal-card__text-box">
             <span className="journal-card__text-box--main">
-            Boryet</span>
+            Coming Soon</span>
             <span className="journal-card__text-box--sub">
               02/25/2023</span>
           </div>
         </div> {/* 02 End */}
-        <div className="journal-card journal-card--2">
+        <div className="journal-card journal-card--coming-soon">
           <div className="journal-card__text-box">
             <span className="journal-card__text-box--main">
-            Boryet</span>
+            Cokming Soon</span>
             <span className="journal-card__text-box--sub">
               02/25/2023</span>
           </div>

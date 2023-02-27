@@ -17,8 +17,8 @@
 
   @include respond(desktop) {
     margin-top: 0;
-    height: 35rem;
-    min-width: 25rem;
+    height: 40rem;
+    min-width: 30rem;
   }
 
   @include respond(desktop-big) {
@@ -72,5 +72,11 @@
     background-image:  
       url("https://i.imgur.com/m4CUuck.png");
     background-position: center;
+  }
+
+  &--coming-soon{
+    background-image:  
+      url("https://i.imgur.com/YOM22Sy.png");
+    background-position: left;
   }
 }

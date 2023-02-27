@@ -70,4 +70,9 @@
     color: $color-green-soft;
     text-decoration: none;
   }
+
+  &:hover a {
+    color: darken($color-green-soft, 15)
+  }
+
 }
