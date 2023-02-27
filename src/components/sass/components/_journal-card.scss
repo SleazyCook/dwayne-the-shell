@@ -2,6 +2,8 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  position: relative;
+  z-index: 1;
 
   margin-top: 10rem;
   height: 100rem;
@@ -31,6 +33,7 @@
     transform: scale(1.05);
     transition: .5s;
     box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
+    z-index: 5;
   }
 
   &__text-box {

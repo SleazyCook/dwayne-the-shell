@@ -117,6 +117,8 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  position: relative;
+  z-index: 1;
   margin-top: 10rem;
   height: 100rem;
   min-width: 50rem;
@@ -139,7 +141,8 @@ body {
   .journal-card:hover {
     transform: scale(1.05);
     transition: .5s;
-    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5); }
+    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
+    z-index: 5; }
   .journal-card__text-box {
     font-family: "Lato", sans-serif;
     width: 100%;
@@ -285,6 +288,7 @@ body {
   flex-direction: column;
   position: relative;
   transition: all .5s;
+  position: relative;
   background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.25), rgba(128, 0, 128, 0.25)), url("https://i.imgur.com/M6Gv3fe.png");
   background-size: cover;
   background-position: center;
@@ -307,6 +311,37 @@ body {
     width: 100%;
     margin: 0;
     padding: 3rem;
+    position: relative;
     display: flex;
     overflow-x: scroll;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */ }
+    .journal__main::-webkit-scrollbar {
+      display: none; }
+  .journal__nav {
+    display: none; }
+    @media (min-width: 37.5em) {
+      .journal__nav {
+        width: 95%;
+        height: 5%;
+        position: fixed;
+        top: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10; } }
+  .journal__nav-icon {
+    font-size: 3rem;
+    color: lightgrey;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 10; }
+    .journal__nav-icon:hover {
+      color: white; }

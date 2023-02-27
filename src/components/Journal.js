@@ -1,13 +1,44 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
+import { FaChevronCircleRight } from 'react-icons/fa'
+import { FaChevronCircleLeft } from 'react-icons/fa'
+
 function Journal() {
+  const slider = useRef(null);
+
+  const slideLeft = (event) => {
+    // const slider = document.getElementById('slider')
+
+    // slider.current.scrollLeft = slider.current.scrollLeft - 500
+    slider.current.scroll({ left: slider.current.scrollLeft -500, behavior: 'smooth'}) 
+    console.log(slider)
+  }
+
+  const slideRight = (event) => {
+    // const slider = document.getElementById('slider')
+
+    // slider.current.scrollLeft = slider.current.scrollLeft + 500
+
+    slider.current.scroll({ left: slider.current.scrollLeft + 500, behavior: 'smooth'}) 
+    console.log(slider)
+  }
+
   return (
     <div className="journal">
 
       <h2 className="heading-secondary"><Link to="/navigate">Journal</Link><span></span></h2>
 
-      <div className="journal__main">
+      <div ref={slider} className="journal__main">
+
+        <div className="journal__nav">
+        <div className="journal__nav-icon">
+            <FaChevronCircleLeft onClick={slideLeft}/>
+          </div>
+          <div className="journal__nav-icon">
+            <FaChevronCircleRight onClick={slideRight}/>
+          </div>
+        </div>
 
         <div className="journal-card journal-card--1">
           <div className="journal-card__text-box">
@@ -46,7 +77,7 @@ function Journal() {
         <div className="journal-card journal-card--coming-soon">
           <div className="journal-card__text-box">
             <span className="journal-card__text-box--main">
-            Cokming Soon</span>
+            Coming Soon</span>
             <span className="journal-card__text-box--sub">
               02/25/2023</span>
           </div>
