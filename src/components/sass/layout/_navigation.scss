@@ -18,6 +18,7 @@
   justify-content: center;
   transform-origin: center;
   animation: scaleOut .5s;
+  z-index: 1;
 
 
   // position: absolute;
@@ -68,9 +69,9 @@
     -webkit-text-stroke: 1px black;
     position: relative;
 
-    animation: fadeIn .5s;
-    animation-fill-mode: backwards;
-    // animation-delay: 5s;
+    // animation: fadeIn .25s;
+    // animation-fill-mode: backwards;
+    // animation-delay: .5s;
 
     &:not(:last-child) {
       margin-bottom: 3rem;

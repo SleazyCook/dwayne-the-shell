@@ -28,19 +28,18 @@ html {
 
 body {
   // starting temp code
-  background-image: 
-    url("https://i.imgur.com/YOM22Sy.png");
-  background-size:cover;
-  background-position: top;
   color: #fff;
+  background-color: #1e1e1e;
+
 
 
   box-sizing: border-box;
 
-  // padding: 0rem;
+  background-image: 
+    url("https://i.imgur.com/YOM22Sy.png");
+  background-size:cover;
+  background-position: top;
 
-  // @include respond(tab-land) {
-  //   padding: 3rem;
 
-  // }
+
 }

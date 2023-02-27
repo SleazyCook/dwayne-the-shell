@@ -45,11 +45,12 @@ html {
       font-size: 75%; } }
 
 body {
+  color: #fff;
+  background-color: #1e1e1e;
+  box-sizing: border-box;
   background-image: url("https://i.imgur.com/YOM22Sy.png");
   background-size: cover;
-  background-position: top;
-  color: #fff;
-  box-sizing: border-box; }
+  background-position: top; }
 
 .body {
   font-family: "Lato", sans-serif;
@@ -77,14 +78,18 @@ body {
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
-    letter-spacing: 2rem;
+    letter-spacing: 2.2rem;
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
     animation-delay: 1.25s; }
+    @media (min-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 5rem;
+        letter-spacing: 3rem; } }
     @media (min-width: 56.25em) {
       .heading-primary--sub {
         font-size: 6rem;
-        letter-spacing: 2.1rem; } }
+        letter-spacing: 2.2rem; } }
 
 .u-hidden {
   display: none; }
@@ -102,7 +107,8 @@ body {
   display: flex;
   justify-content: center;
   transform-origin: center;
-  animation: scaleOut .5s; }
+  animation: scaleOut .5s;
+  z-index: 1; }
   @media (min-width: 37.5em) {
     .navigation {
       height: 100vh; } }
@@ -130,9 +136,7 @@ body {
     -webkit-text-stroke: 1px white;
     color: #60461f;
     -webkit-text-stroke: 1px black;
-    position: relative;
-    animation: fadeIn .5s;
-    animation-fill-mode: backwards; }
+    position: relative; }
     @media (min-width: 56.25em) {
       .navigation__link {
         font-size: 8rem; } }
