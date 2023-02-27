@@ -56,9 +56,18 @@
   text-align: center;
   font-size: 7rem;
   font-family: $font-medieval;
+  transition: all .5s;
 
   @include respond(tab-port) {
     font-size: 15rem;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:hover a {
+      color: darken($color-green-soft, 15);
+    }
   }
 
   @include respond(tab-land) {
@@ -69,10 +78,9 @@
   & a {
     color: $color-green-soft;
     text-decoration: none;
+    transition: all .5s;
   }
 
-  &:hover a {
-    color: darken($color-green-soft, 15)
-  }
+
 
 }
