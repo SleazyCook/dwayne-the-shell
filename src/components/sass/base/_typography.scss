@@ -52,12 +52,17 @@
 
 // Page Headers
 .heading-secondary {
-  
+  margin-top: 15rem;
   text-align: center;
-  font-size: 12em;
+  font-size: 7rem;
   font-family: $font-medieval;
 
+  @include respond(tab-port) {
+    font-size: 15rem;
+  }
+
   @include respond(tab-land) {
+    margin-top: 5rem;
     font-size: 9rem;
   }
 

@@ -1,13 +1,30 @@
 .journal-card {
-  height: 45rem;
-  min-width: 35rem;
-  // border: 3px solid blue;
-  // box-shadow: 
-
-
   display: flex;
   justify-content: left;
   align-items: center;
+
+  margin-top: 10rem;
+
+  height: 100rem;
+  min-width: 50rem;
+
+  @include respond(tab-land) {
+    margin-top: 5rem;
+    height: 60rem;
+    min-width: 45rem;
+  }
+
+  @include respond(desktop) {
+    margin-top: 0;
+    height: 35rem;
+    min-width: 25rem;
+  }
+
+  @include respond(desktop-big) {
+    margin-top: 0;
+    height: 45rem;
+    min-width: 35rem;
+  }
 
 
   font-family: $font-default;

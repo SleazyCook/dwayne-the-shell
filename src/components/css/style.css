@@ -93,11 +93,16 @@ body {
         letter-spacing: 1.25rem; } }
 
 .heading-secondary {
+  margin-top: 15rem;
   text-align: center;
-  font-size: 12em;
+  font-size: 7rem;
   font-family: "MedievalSharp", cursive; }
+  @media (min-width: 37.5em) {
+    .heading-secondary {
+      font-size: 15rem; } }
   @media (min-width: 56.25em) {
     .heading-secondary {
+      margin-top: 5rem;
       font-size: 9rem; } }
   .heading-secondary a {
     color: #a4c856;
@@ -107,12 +112,28 @@ body {
   display: none; }
 
 .journal-card {
-  height: 45rem;
-  min-width: 35rem;
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-top: 10rem;
+  height: 100rem;
+  min-width: 50rem;
   font-family: "Lato", sans-serif; }
+  @media (min-width: 56.25em) {
+    .journal-card {
+      margin-top: 5rem;
+      height: 60rem;
+      min-width: 45rem; } }
+  @media (min-width: 75em) {
+    .journal-card {
+      margin-top: 0;
+      height: 35rem;
+      min-width: 25rem; } }
+  @media (min-width: 112.5em) {
+    .journal-card {
+      margin-top: 0;
+      height: 45rem;
+      min-width: 35rem; } }
   .journal-card__text-box {
     width: 100%;
     background-image: linear-gradient(to right top, rgba(96, 70, 31, 0.8), rgba(164, 200, 86, 0.8));
@@ -249,7 +270,6 @@ body {
 
 .journal {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100svh;
   flex-direction: column;
