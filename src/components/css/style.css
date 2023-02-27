@@ -118,7 +118,7 @@ body {
   margin-top: 10rem;
   height: 100rem;
   min-width: 50rem;
-  font-family: "Lato", sans-serif; }
+  border-radius: 3px; }
   @media (min-width: 56.25em) {
     .journal-card {
       margin-top: 5rem;
@@ -134,7 +134,12 @@ body {
       margin-top: 0;
       height: 45rem;
       min-width: 35rem; } }
+  .journal-card:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5); }
   .journal-card__text-box {
+    font-family: "Lato", sans-serif;
     width: 100%;
     background-image: linear-gradient(to right top, rgba(96, 70, 31, 0.8), rgba(164, 200, 86, 0.8));
     padding: 2rem; }

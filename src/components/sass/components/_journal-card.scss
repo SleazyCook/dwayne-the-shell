@@ -4,9 +4,10 @@
   align-items: center;
 
   margin-top: 10rem;
-
   height: 100rem;
   min-width: 50rem;
+
+  border-radius: 3px;
 
   @include respond(tab-land) {
     margin-top: 5rem;
@@ -26,11 +27,14 @@
     min-width: 35rem;
   }
 
-
-  font-family: $font-default;
+  &:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
+  }
 
   &__text-box {
-
+    font-family: $font-default;
     
     width: 100%;
     background-image: linear-gradient(
