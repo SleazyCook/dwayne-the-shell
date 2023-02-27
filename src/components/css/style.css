@@ -72,7 +72,7 @@ body {
     animation-delay: .75s; }
     @media (min-width: 56.25em) {
       .heading-primary--main {
-        font-size: 10rem; } }
+        font-size: 9rem; } }
   .heading-primary--sub {
     display: block;
     text-align: center;
@@ -85,11 +85,12 @@ body {
     @media (min-width: 37.5em) {
       .heading-primary--sub {
         font-size: 5rem;
-        letter-spacing: 3rem; } }
+        letter-spacing: 2rem;
+        padding-left: 1rem; } }
     @media (min-width: 56.25em) {
       .heading-primary--sub {
-        font-size: 6rem;
-        letter-spacing: 2.2rem; } }
+        font-size: 5rem;
+        letter-spacing: 1.25rem; } }
 
 .u-hidden {
   display: none; }
@@ -199,5 +200,5 @@ body {
     cursor: pointer; }
     @media (min-width: 56.25em) {
       .home__img {
-        width: 420px;
-        height: 450px; } }
+        width: 400px;
+        height: 428.5px; } }

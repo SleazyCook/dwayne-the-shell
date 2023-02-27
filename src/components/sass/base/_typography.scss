@@ -20,7 +20,7 @@
     animation-delay: .75s;
 
     @include respond(tab-land) {
-      font-size: 10rem;
+      font-size: 9rem;
     }
   }
 
@@ -37,12 +37,13 @@
 
     @include respond(tab-port) {
       font-size: 5rem;
-      letter-spacing: 3rem;
+      letter-spacing: 2rem;
+      padding-left: 1rem;
     }
 
     @include respond(tab-land) {
-      font-size: 6rem;
-      letter-spacing: 2.2rem;
+      font-size: 5rem;
+      letter-spacing: 1.25rem;
     }
   }
 

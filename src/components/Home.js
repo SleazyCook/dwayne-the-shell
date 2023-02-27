@@ -26,7 +26,7 @@ function Home() {
         <span className="heading-primary--main">
           Dwayne</span>
         <span className="heading-primary--sub">
-          the Shell</span>
+          the shell</span>
     </h1>
     </div>
 
