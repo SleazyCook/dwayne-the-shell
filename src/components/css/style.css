@@ -133,8 +133,8 @@ body {
   z-index: 1;
   transition: .5s;
   cursor: pointer;
-  height: 80rem;
-  min-width: 50rem;
+  height: 60rem;
+  min-width: 40rem;
   border-radius: 3px; }
   @media (min-width: 56.25em) {
     .journal-card {
