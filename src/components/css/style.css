@@ -207,11 +207,13 @@ body {
       height: 100vh; } }
   .entry__main {
     padding: 2rem;
-    margin: 2rem;
     background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 0, 128, 0.5));
     border-radius: 3px;
     font-family: "Lato", sans-serif;
     width: 80%; }
+    @media (min-width: 37.5em) {
+      .entry__main {
+        margin: 2rem; } }
   .entry__passage {
     font-size: 20px; }
     @media (min-width: 37.5em) {

@@ -28,7 +28,6 @@
   &__main {
 
     padding: 2rem;
-    margin: 2rem;
     background-image: linear-gradient(
       to right bottom,
       rgba(lightgreen, 0.5),
@@ -38,6 +37,10 @@
     font-family: $font-default;
 
     width: 80%;
+
+    @include respond(tab-port) {
+      margin: 2rem;
+    }
   }
 
   &__passage {
