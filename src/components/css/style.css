@@ -348,7 +348,8 @@ body {
         font-size: 32px;
         width: 15rem;
         height: 15rem;
-        color: white; }
+        color: white;
+        cursor: pointer; }
         .journal__nav-icon--left {
           position: fixed;
           top: 50%;
