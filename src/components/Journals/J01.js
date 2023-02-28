@@ -24,6 +24,7 @@ function J01() {
           <br /><br />
           Now that I'm set up in the Tresen market, there is something quite unusual about this particular locket.
         </p>
+        <p className="entry__signature">Dwayne the Shell</p>
       </div>
 
     </div>

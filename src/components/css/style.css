@@ -219,6 +219,10 @@ body {
     @media (min-width: 37.5em) {
       .entry__passage {
         margin: 3rem; } }
+  .entry__signature {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Grape Nuts", cursive; }
 
 #home__nav-box {
   position: relative; }
