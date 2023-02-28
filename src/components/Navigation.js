@@ -25,7 +25,7 @@ function Navigation() {
 
         <Link onClick={closeNav} className="navigation__link" data-text="ARTWORK" to="/artwork">Artwork</Link>
 
-        <a onClick={closeNav} className="navigation__link" data-text="HANDOUTS" href="#">Handouts</a>
+        {/* <a onClick={closeNav} className="navigation__link" data-text="HANDOUTS" href="#">Handouts</a> */}
       </nav>
     </div>
   )
