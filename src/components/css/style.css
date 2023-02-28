@@ -122,6 +122,12 @@ body {
     text-decoration: none;
     transition: all .5s; }
 
+.heading-tertiary__link {
+  color: white;
+  text-decoration: none; }
+  .heading-tertiary__link:hover {
+    color: #d9d9d9; }
+
 .heading-tertiary--main {
   display: block;
   text-align: center;

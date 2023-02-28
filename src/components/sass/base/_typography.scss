@@ -85,7 +85,15 @@
 
 .heading-tertiary{
 
-  
+  &__link{
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: darken(white, 15);
+    }
+  }
+
   &--main {
     display: block;
     text-align: center;

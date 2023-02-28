@@ -7,12 +7,14 @@ function J01() {
 
       <div className="entry__main">
         <h3 classNamne="heading-tertiary">
-          <span className="heading-tertiary--main">
-            Introduction
-          </span>
-          <span className="heading-tertiary--sub">
-            11/06/2022
-          </span>
+          <Link className="heading-tertiary__link" to="/navigate">
+            <span className="heading-tertiary--main">
+              Introduction
+            </span>
+            <span className="heading-tertiary--sub">
+              11/06/2022
+            </span>
+          </Link>
         </h3>
 
         <p className="entry__passage">
