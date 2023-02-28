@@ -140,7 +140,12 @@ body {
     .journal-card {
       margin-top: 5rem;
       height: 60rem;
-      min-width: 45rem; } }
+      min-width: 45rem; }
+      .journal-card:hover {
+        transform: scale(1.05);
+        transition: .5s;
+        box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
+        z-index: 5; } }
   @media (min-width: 75em) {
     .journal-card {
       margin-top: 0;
@@ -151,11 +156,6 @@ body {
       margin-top: 0;
       height: 45rem;
       min-width: 35rem; } }
-  .journal-card:hover {
-    transform: scale(1.05);
-    transition: .5s;
-    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
-    z-index: 5; }
   .journal-card__text-box {
     font-family: "Lato", sans-serif;
     width: 100%;

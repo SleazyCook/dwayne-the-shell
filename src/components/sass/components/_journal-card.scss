@@ -17,6 +17,13 @@
     margin-top: 5rem;
     height: 60rem;
     min-width: 45rem;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: .5s;
+      box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
+      z-index: 5;
+    }
   }
 
   @include respond(desktop) {
@@ -31,12 +38,9 @@
     min-width: 35rem;
   }
 
-  &:hover {
-    transform: scale(1.05);
-    transition: .5s;
-    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.5);
-    z-index: 5;
-  }
+  
+
+
 
   &__text-box {
     font-family: $font-default;
