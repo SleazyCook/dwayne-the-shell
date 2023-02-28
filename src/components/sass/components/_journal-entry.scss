@@ -45,7 +45,7 @@
     border-radius: 3px;
     font-family: $font-default;
 
-    width: 80%;
+    width: 100%;
 
     @include respond(tab-port) {
       margin: 2rem;
