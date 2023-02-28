@@ -27,7 +27,7 @@ function Journal() {
   return (
     <div className="journal">
 
-      <h2 className="heading-secondary"><Link to="/navigate">Journal</Link><span></span></h2>
+      <h2 className="heading-secondary"><Link to="/navigate">Journal</Link></h2>
 
       <div ref={slider} className="journal__main">
 

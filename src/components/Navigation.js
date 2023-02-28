@@ -21,7 +21,7 @@ function Navigation() {
 
         <Link onClick={closeNav} className="navigation__link" data-text="JOURNAL" to="/journal">Journal</Link>
 
-        <a onClick={closeNav} className="navigation__link" data-text="INVENTORY" href="#">Inventory</a>
+        <Link onClick={closeNav} className="navigation__link" data-text="INVENTORY" to="/inventory">Inventory</Link>
 
         <a onClick={closeNav} className="navigation__link" data-text="ARTWORK" href="#">Artwork</a>
 

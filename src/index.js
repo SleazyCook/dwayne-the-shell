@@ -12,6 +12,8 @@ import J01 from './components/Journals/J01'
 import J02 from './components/Journals/J01'
 import J03 from './components/Journals/J01'
 
+import Inventory from './components/Inventory'
+
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)
 
@@ -44,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: "journal/03",
         element: <J03 />
+      },
+      {
+        path: "inventory",
+        element: <Inventory />
       }
     ]
   }
