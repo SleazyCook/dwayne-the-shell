@@ -78,7 +78,7 @@ body {
     letter-spacing: 1.05rem;
     animation: fadeIn 3s ease-out;
     animation-fill-mode: backwards;
-    animation-delay: .75s; }
+    animation-delay: .25s; }
     @media (min-width: 56.25em) {
       .heading-primary--main {
         font-size: 9rem; } }
@@ -90,7 +90,7 @@ body {
     letter-spacing: 1.5rem;
     animation: fadeIn 2s ease-out;
     animation-fill-mode: backwards;
-    animation-delay: 1.25s; }
+    animation-delay: .75s; }
     @media (min-width: 37.5em) {
       .heading-primary--sub {
         font-size: 5rem;

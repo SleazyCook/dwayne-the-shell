@@ -51,8 +51,7 @@ function Inventory() {
           <div className="inventory__item-number">&nbsp;</div>
         </div> {/* 07 END */}
 
-        
-      </div>
+      </div>  {/* Flexbox End */}
 
     </div>
   )
