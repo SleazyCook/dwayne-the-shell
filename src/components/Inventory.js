@@ -5,7 +5,7 @@ function Inventory() {
   return (
     <div className="inventory">
 
-      <h2 className="heading-secondary"><Link to="/navigate">Inventory</Link></h2>
+      <h2 className="heading-secondary heading-secondary--inventory"><Link to="/navigate">Inventory</Link></h2>
 
       <h3 className="heading-tertiary">Equipment</h3>
 

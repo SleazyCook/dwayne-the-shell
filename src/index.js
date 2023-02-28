@@ -14,6 +14,8 @@ import J03 from './components/Journals/J01'
 
 import Inventory from './components/Inventory'
 
+import Artwork from './components/Artwork'
+
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)
 
@@ -50,6 +52,10 @@ export const router = createBrowserRouter([
       {
         path: "inventory",
         element: <Inventory />
+      },
+      {
+        path: "artwork",
+        element: <Artwork />
       }
     ]
   }

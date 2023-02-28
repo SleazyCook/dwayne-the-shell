@@ -1,0 +1,88 @@
+.artwork {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+
+  height: 100svh;
+  flex-direction: column;
+  position: relative;
+  transition: all .5s;
+  position: relative;
+
+  overflow: scroll;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
+  // Background Image
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(lightgreen, 0.25),
+    rgba(purple, 0.25)
+  ),
+  url("https://i.imgur.com/d79NGzy.png");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+
+  &__flex-box {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__flex-item {
+    width: 35rem;
+    height: 50rem;
+    border-radius: 3px;
+
+    &--dwayne-01 {
+      width: 35rem;
+      height: 50rem;
+      background-image: 
+      url("https://i.imgur.com/YOM22Sy.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--dwayne-02 {
+      width: 50rem;
+      height: 50rem;
+      background-image: 
+      url("https://i.imgur.com/0DHwSKk.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--dwayne-03 {
+      width: 50rem;
+      height: 50rem;
+      background-image: 
+      url("https://i.imgur.com/go7u9Zn.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--dwayne-04 {
+      width: 35rem;
+      height: 50rem;
+      background-image: 
+      url("https://i.imgur.com/oWxUdfr.png");
+      background-position: top;
+      background-size: cover;
+    }
+  }
+}

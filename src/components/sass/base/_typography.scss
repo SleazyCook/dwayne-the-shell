@@ -81,12 +81,34 @@
     transition: all .5s;
   }
 
+  &--inventory {
+    & a {
+      color: lighten(purple, 15);
+    }
+
+    &:hover a {
+      color: lighten(purple, 5);
+    }
+  }
+
+  &--artwork {
+    & a {
+      color: $color-brown-soft;
+    }
+
+    &:hover a {
+      color: lighten($color-brown-soft, 15);
+    }
+  }
+
 }
 
 .heading-tertiary{
+
   display: block;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: $font-default;
 
   &__link{
     color: white;

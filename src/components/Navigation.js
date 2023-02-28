@@ -23,7 +23,7 @@ function Navigation() {
 
         <Link onClick={closeNav} className="navigation__link" data-text="INVENTORY" to="/inventory">Inventory</Link>
 
-        <a onClick={closeNav} className="navigation__link" data-text="ARTWORK" href="#">Artwork</a>
+        <Link onClick={closeNav} className="navigation__link" data-text="ARTWORK" to="/artwork">Artwork</Link>
 
         <a onClick={closeNav} className="navigation__link" data-text="HANDOUTS" href="#">Handouts</a>
       </nav>
