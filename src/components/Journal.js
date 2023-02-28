@@ -31,13 +31,11 @@ function Journal() {
 
       <div ref={slider} className="journal__main">
 
-        <div className="journal__nav">
-        <div className="journal__nav-icon">
-            <FaChevronCircleLeft onClick={slideLeft}/>
-          </div>
-          <div className="journal__nav-icon">
-            <FaChevronCircleRight onClick={slideRight}/>
-          </div>
+        <div className="journal__nav-icon journal__nav-icon--left">
+          <FaChevronCircleLeft className="journal__icon" onClick={slideLeft}/>
+        </div>
+        <div className="journal__nav-icon journal__nav-icon--right">
+            <FaChevronCircleRight className="journal__icon" onClick={slideRight}/>
         </div>
 
         <div className="journal-card journal-card--1">

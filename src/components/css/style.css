@@ -133,7 +133,7 @@ body {
   z-index: 1;
   transition: .5s;
   margin-top: 10rem;
-  height: 100rem;
+  height: 80rem;
   min-width: 50rem;
   border-radius: 3px; }
   @media (min-width: 56.25em) {
@@ -339,25 +339,27 @@ body {
     /* Firefox */ }
     .journal__main::-webkit-scrollbar {
       display: none; }
-  .journal__nav {
+  .journal__nav-icon {
     display: none; }
     @media (min-width: 37.5em) {
-      .journal__nav {
-        width: 95%;
-        height: 5%;
-        position: fixed;
-        top: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 10; } }
-  .journal__nav-icon {
-    font-size: 3rem;
+      .journal__nav-icon {
+        display: inline;
+        z-index: 10;
+        font-size: 32px;
+        width: 15rem;
+        height: 15rem;
+        color: white; }
+        .journal__nav-icon--left {
+          position: fixed;
+          top: 50%;
+          left: 2%; }
+        .journal__nav-icon--right {
+          position: fixed;
+          top: 50%;
+          right: -7.5%; } }
+  .journal__icon {
     color: lightgrey;
-    transition: .3s;
-    cursor: pointer;
-    position: relative;
-    z-index: 10; }
-    .journal__nav-icon:hover {
+    transition: .25s; }
+    .journal__icon:hover {
+      transform: scale(1.1);
       color: white; }
