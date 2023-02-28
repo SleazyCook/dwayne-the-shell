@@ -132,6 +132,7 @@ body {
   position: relative;
   z-index: 1;
   transition: .5s;
+  cursor: pointer;
   margin-top: 10rem;
   height: 80rem;
   min-width: 50rem;
@@ -346,10 +347,12 @@ body {
         display: inline;
         z-index: 10;
         font-size: 32px;
-        width: 15rem;
-        height: 15rem;
-        color: white;
-        cursor: pointer; }
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .journal__nav-icon--left {
           position: fixed;
           top: 50%;
@@ -357,7 +360,7 @@ body {
         .journal__nav-icon--right {
           position: fixed;
           top: 50%;
-          right: -7.5%; } }
+          right: 2%; } }
   .journal__icon {
     color: lightgrey;
     transition: .25s; }
