@@ -213,8 +213,10 @@ body {
     font-family: "Lato", sans-serif;
     width: 80%; }
   .entry__passage {
-    margin-top: 3rem;
     font-size: 20px; }
+    @media (min-width: 37.5em) {
+      .entry__passage {
+        margin: 3rem; } }
 
 #home__nav-box {
   position: relative; }

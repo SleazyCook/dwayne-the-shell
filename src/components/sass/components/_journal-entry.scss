@@ -41,7 +41,11 @@
   }
 
   &__passage {
-    margin-top: 3rem;
+
     font-size: 20px;
+
+    @include respond(tab-port) {
+      margin: 3rem;
+    }
   }
 }
