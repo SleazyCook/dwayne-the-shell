@@ -122,6 +122,16 @@ body {
     text-decoration: none;
     transition: all .5s; }
 
+.heading-tertiary--main {
+  display: block;
+  text-align: center;
+  font-size: 5rem; }
+
+.heading-tertiary--sub {
+  display: block;
+  font-size: 3rem;
+  text-align: center; }
+
 .u-hidden {
   display: none; }
 
@@ -179,6 +189,32 @@ body {
   .journal-card--coming-soon {
     background-image: url("https://i.imgur.com/YOM22Sy.png");
     background-position: left; }
+
+.entry {
+  display: flex;
+  align-items: center;
+  height: 100svh;
+  flex-direction: column;
+  position: relative;
+  transition: all .5s;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.25), rgba(128, 0, 128, 0.25)), url("https://i.imgur.com/M6Gv3fe.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @media (min-width: 37.5em) {
+    .entry {
+      height: 100vh; } }
+  .entry__main {
+    padding: 2rem;
+    margin: 2rem;
+    background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 0, 128, 0.5));
+    border-radius: 3px;
+    font-family: "Lato", sans-serif;
+    width: 80%; }
+  .entry__passage {
+    margin-top: 3rem;
+    font-size: 20px; }
 
 #home__nav-box {
   position: relative; }
@@ -323,6 +359,9 @@ body {
   @media (min-width: 37.5em) {
     .journal {
       height: 100vh; } }
+  .journal__link {
+    text-decoration: none;
+    color: white; }
   .journal__main {
     width: 100%;
     margin: 0;

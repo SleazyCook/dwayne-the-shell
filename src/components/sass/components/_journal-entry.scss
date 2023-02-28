@@ -1,0 +1,47 @@
+.entry {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+
+  height: 100svh;
+  flex-direction: column;
+  position: relative;
+  transition: all .5s;
+  position: relative;
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
+  // Background Image
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(lightgreen, 0.25),
+    rgba(purple, 0.25)
+  ),
+  url("https://i.imgur.com/M6Gv3fe.png");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+
+
+  &__main {
+
+    padding: 2rem;
+    margin: 2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(lightgreen, 0.5),
+      rgba(purple, 0.5)
+    );
+    border-radius: 3px;
+    font-family: $font-default;
+
+    width: 80%;
+  }
+
+  &__passage {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+}

@@ -33,6 +33,11 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
 
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+
   &__main {
     width: 100%;
     margin: 0;

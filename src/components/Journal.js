@@ -38,14 +38,16 @@ function Journal() {
             <FaChevronCircleRight className="journal__icon" onClick={slideRight}/>
         </div>
 
-        <div className="journal-card journal-card--1">
-          <div className="journal-card__text-box">
-            <span className="journal-card__text-box--main">
-              Introduction</span>
-            <span className="journal-card__text-box--sub">
-              11/06/2022</span>
-          </div>
-        </div> {/* 01 End */}
+        <Link to="/journal/01" className="journal__link">
+          <div className="journal-card journal-card--1">
+            <div className="journal-card__text-box">
+              <span className="journal-card__text-box--main">
+                Introduction</span>
+              <span className="journal-card__text-box--sub">
+                11/06/2022</span>
+            </div>
+          </div> {/* 01 End */}
+        </Link>
 
         <div className="journal-card journal-card--2">
           <div className="journal-card__text-box">

@@ -81,6 +81,20 @@
     transition: all .5s;
   }
 
+}
 
+.heading-tertiary{
 
+  
+  &--main {
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
