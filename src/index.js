@@ -16,6 +16,8 @@ import Inventory from './components/Inventory'
 
 import Artwork from './components/Artwork'
 
+import Backstory from './components/Backstory'
+
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)
 
@@ -56,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "artwork",
         element: <Artwork />
+      },
+      {
+        path: "backstory",
+        element: <Backstory />
       }
     ]
   }

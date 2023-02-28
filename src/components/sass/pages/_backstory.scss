@@ -1,0 +1,61 @@
+.backstory {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+
+  height: 100svh;
+  flex-direction: column;
+  position: relative;
+  transition: all .5s;
+  position: relative;
+
+  overflow: scroll;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
+  // Background Image
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(lightgreen, 0.25),
+    rgba(purple, 0.25)
+  ),
+  url("https://i.imgur.com/xx0cb0X.png");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+
+
+
+
+  &__story {
+    padding: 2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(lightgreen, 0.5),
+      rgba($color-brown-soft, 0.5)
+    );
+    border-radius: 3px;
+    font-family: $font-default;
+
+    width: 100%;
+
+    @include respond(tab-port) {
+      margin: 2rem;
+    }
+
+    font-size: 20px;
+
+    @include respond(tab-port) {
+      margin: 3rem;
+    }
+  }
+}

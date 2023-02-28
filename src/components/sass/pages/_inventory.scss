@@ -60,6 +60,12 @@
     justify-content: center;
     align-items: center;
 
+    & a {
+      color: white;
+      text-decoration: none;
+      cursor: default;
+    }
+
     &--spear {
       background-image: linear-gradient(
         to right bottom,

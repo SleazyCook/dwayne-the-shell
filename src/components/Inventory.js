@@ -46,9 +46,10 @@ function Inventory() {
           <div className="inventory__item-number">&nbsp;</div>
         </div> {/* 06 END */}
 
-        <div className="inventory__flex-item inventory__flex-item--tinker">
+        <div className="inventory__flex-item inventory__flex-item--tinker"><Link to="/backstory">
           <div className="inventory__item-name">Tinkerer's Tools</div>
           <div className="inventory__item-number">&nbsp;</div>
+          </Link>
         </div> {/* 07 END */}
 
       </div>  {/* Flexbox End */}
