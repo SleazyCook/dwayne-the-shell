@@ -44,6 +44,12 @@
     gap: 2rem;
   }
 
+  &__item-name {
+    font-size: 3rem;
+    font-family: $font-alt;
+    font-weight: 900;
+  }
+
   &__flex-item {
     width: 20rem;
     height: 20rem;
@@ -63,11 +69,73 @@
       background-position: top;
       background-size: cover;
     }
+
+    &--shield {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/MxHLFYU.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--mace {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/Id0AArv.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--longbow {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/n11YEX7.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--arrow {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/IvHZ80Y.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--tinker {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/i8sIn84.png");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &--scale {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(lightgreen, 0.5),
+        rgba(grey, 0.6)
+      ),
+      url("https://i.imgur.com/XVt4riJ.png");
+      background-position: top;
+      background-size: cover;
+    }
   }
 
-  &__item-name {
-    font-size: 3rem;
-    font-family: $font-alt;
-    font-weight: 900;
-  }
+
 }

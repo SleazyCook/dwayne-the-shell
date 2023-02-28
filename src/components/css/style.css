@@ -392,6 +392,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem; }
+  .inventory__item-name {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900; }
   .inventory__flex-item {
     width: 20rem;
     height: 20rem;
@@ -403,10 +407,30 @@ body {
       background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/PCZlFlr.png");
       background-position: top;
       background-size: cover; }
-  .inventory__item-name {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
-    font-weight: 900; }
+    .inventory__flex-item--shield {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/MxHLFYU.png");
+      background-position: top;
+      background-size: cover; }
+    .inventory__flex-item--mace {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/Id0AArv.png");
+      background-position: top;
+      background-size: cover; }
+    .inventory__flex-item--longbow {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/n11YEX7.png");
+      background-position: top;
+      background-size: cover; }
+    .inventory__flex-item--arrow {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/IvHZ80Y.png");
+      background-position: top;
+      background-size: cover; }
+    .inventory__flex-item--tinker {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/i8sIn84.png");
+      background-position: top;
+      background-size: cover; }
+    .inventory__flex-item--scale {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(128, 128, 128, 0.6)), url("https://i.imgur.com/XVt4riJ.png");
+      background-position: top;
+      background-size: cover; }
 
 .journal {
   display: flex;
