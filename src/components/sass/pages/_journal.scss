@@ -97,32 +97,4 @@
 ;    }
   }
 
-  // &__nav {
-  //   display: none;
-
-  //   @include respond(tab-port) {
-  //     width: 95%;
-  //     height: 5%;
-  //     position: fixed;
-  //     top: 50%;
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     z-index: 10;
-  //   }
-  // }
-
-  // &__nav-icon {
-  //   font-size: 3rem;
-  //   color: lightgrey;
-  //   transition: .3s;
-  //   cursor: pointer;
-  //   position: relative;
-  //   z-index: 10;
-
-  //   &:hover {
-  //     color: white;
-  //   }
-  // }
 }

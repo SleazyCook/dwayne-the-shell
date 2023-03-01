@@ -13,6 +13,8 @@ function App() {
 
       <Outlet context/>
 
+      <Footer />
+
 
     </div>
   )

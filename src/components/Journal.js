@@ -4,22 +4,17 @@ import { Link } from 'react-router-dom'
 import { FaChevronCircleRight } from 'react-icons/fa'
 import { FaChevronCircleLeft } from 'react-icons/fa'
 
+import Footer from './Footer'
+
 function Journal() {
   const slider = useRef(null);
 
   const slideLeft = (event) => {
-    // const slider = document.getElementById('slider')
-
-    // slider.current.scrollLeft = slider.current.scrollLeft - 500
     slider.current.scroll({ left: slider.current.scrollLeft -500, behavior: 'smooth'}) 
     console.log(slider)
   }
 
   const slideRight = (event) => {
-    // const slider = document.getElementById('slider')
-
-    // slider.current.scrollLeft = slider.current.scrollLeft + 500
-
     slider.current.scroll({ left: slider.current.scrollLeft + 500, behavior: 'smooth'}) 
     console.log(slider)
   }
@@ -104,6 +99,8 @@ function Journal() {
         </div> {/* CS End */}
 
       </div> 
+
+      {/* <Footer /> */}
 
 
     </div>
