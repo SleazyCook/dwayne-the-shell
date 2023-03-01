@@ -334,7 +334,7 @@ body {
     display: none; }
   @media (min-width: 37.5em) {
     .navigation {
-      height: 100vh; } }
+      height: calc(100vh + 2rem); } }
   .navigation__container {
     margin: 0;
     padding: 0;
