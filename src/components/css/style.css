@@ -205,6 +205,9 @@ body {
   .journal-card--3 {
     background-image: url("https://i.imgur.com/m4CUuck.png");
     background-position: center; }
+  .journal-card--4 {
+    background-image: url("https://i.imgur.com/3OItlYk.png");
+    background-position: center; }
   .journal-card--coming-soon {
     background-image: url("https://i.imgur.com/YOM22Sy.png");
     background-position: left; }

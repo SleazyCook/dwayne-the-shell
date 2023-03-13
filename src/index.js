@@ -9,8 +9,9 @@ import Navigation from './components/Navigation'
 
 import Journal from './components/Journal'
 import J01 from './components/Journals/J01'
-import J02 from './components/Journals/J01'
-import J03 from './components/Journals/J01'
+import J02 from './components/Journals/J02'
+import J03 from './components/Journals/J03'
+import J04 from './components/Journals/J04'
 
 import Inventory from './components/Inventory'
 
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "journal/03",
         element: <J03 />
+      },
+      {
+        path: "journal/04",
+        element: <J04 />
       },
       {
         path: "inventory",

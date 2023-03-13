@@ -44,32 +44,39 @@ function Journal() {
           </div> {/* 01 End */}
         </Link>
 
-        <div className="journal-card journal-card--2">
-          <div className="journal-card__text-box">
-            <span className="journal-card__text-box--main">
-              Strange Locket</span>
-            <span className="journal-card__text-box--sub">
-              12/03/2022</span>
-          </div>
-        </div> {/* 02 End */}
+        <Link to="/journal/02" className="journal__link">
+          <div className="journal-card journal-card--2">
+            <div className="journal-card__text-box">
+              <span className="journal-card__text-box--main">
+                Strange Locket</span>
+              <span className="journal-card__text-box--sub">
+                12/03/2022</span>
+            </div>
+          </div> {/* 02 End */}
+        </Link>
 
-        <div className="journal-card journal-card--3">
-          <div className="journal-card__text-box">
-            <span className="journal-card__text-box--main">
-            Boryet</span>
-            <span className="journal-card__text-box--sub">
-              02/25/2023</span>
-          </div>
-        </div> {/* 02 End */}
+        <Link to="/journal/03" className="journal__link">
+          <div className="journal-card journal-card--3">
+            <div className="journal-card__text-box">
+              <span className="journal-card__text-box--main">
+              Boryet and the Obelisk</span>
+              <span className="journal-card__text-box--sub">
+                02/25/2023</span>
+            </div>
+          </div> {/* 02 End */}
+        </Link>
 
-        <div className="journal-card journal-card--coming-soon">
-          <div className="journal-card__text-box">
-            <span className="journal-card__text-box--main">
-            Coming Soon</span>
-            <span className="journal-card__text-box--sub">
-              02/25/2023</span>
-          </div>
-        </div> {/* CS End */}
+
+        <Link to="/journal/04" className="journal__link">
+          <div className="journal-card journal-card--4">
+            <div className="journal-card__text-box">
+              <span className="journal-card__text-box--main">
+              Dark Path to Tresen</span>
+              <span className="journal-card__text-box--sub">
+                02/25/2023</span>
+            </div>
+          </div> {/* CS End */}
+        </Link>
 
         <div className="journal-card journal-card--coming-soon">
           <div className="journal-card__text-box">
